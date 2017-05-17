@@ -14,20 +14,17 @@ import java.util.List;
 public class MyStepdefs {
     @When("^I checkout (\\d+) \"([^\"]*)\"$")
     public void iCheckout(int arg0, String arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        System.out.println("When");
     }
 
     @Given("^the price of fruits as follow$")
     public void thePriceOfFruitsAsFollow() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        System.out.println("Given");
     }
 
     @Then("^the total price should be (\\d+)c$")
     public void theTotalPriceShouldBeC(int arg0) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        System.out.println("Then");
     }
 
     @Given("^the price of Fruit and Price$")
@@ -49,5 +46,20 @@ public class MyStepdefs {
             }
             System.out.println("The price of " + fruit + " is " + price + "C");
         }
+    }
+
+    @Given("^Open chrome and start application$")
+    public void openChromeAndStartApplication() throws Throwable {
+        System.out.println("GivenGiven");
+    }
+
+    @When("^I enter valid username and valid password$")
+    public void iEnterValidUsernameAndValidPassword() throws Throwable {
+        System.out.println("WhenWhen");
+    }
+
+    @Then("^user should be able to login successfully$")
+    public void userShouldBeAbleToLoginSuccessfully() throws Throwable {
+        System.out.println("ThenThen");
     }
 }
