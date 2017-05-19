@@ -80,7 +80,8 @@
                 <version>2.20</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <prpertyName>aschalew</prpertyName>
+                        <fruitName>fruit</fruitName>
+                        <price>price</price>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

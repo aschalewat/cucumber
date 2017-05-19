@@ -12,6 +12,15 @@ import java.util.List;
  * Created by Aschalew on 17/05/2017.
  */
 public class MyStepdefs {
+
+    private String fruit;
+    private String price;
+
+    public MyStepdefs(){
+        fruit = System.getProperty("fruitName");
+        price = System.getProperty("price");
+    }
+
     @When("^I checkout (\\d+) \"([^\"]*)\"$")
     public void iCheckout(int arg0, String arg1) throws Throwable {
         System.out.println("When");
@@ -20,6 +29,11 @@ public class MyStepdefs {
     @Given("^the price of fruits as follow$")
     public void thePriceOfFruitsAsFollow() throws Throwable {
         System.out.println("Given");
+        if (fruit.contains("Banana")){
+            System.out.println("The fruit is "+ fruit  +" and it costs "+ price +"c" );
+        }else{
+            System.out.println("The fruit is not Banana");
+        }
     }
 
     @Then("^the total price should be (\\d+)c$")
