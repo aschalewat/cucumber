@@ -80,8 +80,8 @@
                 <version>2.20</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <fruitName>fruit</fruitName>
-                        <price>price</price>
+                        </systemPropertyVariables>>Banana</fruitName>
+                        <price>50</price>
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

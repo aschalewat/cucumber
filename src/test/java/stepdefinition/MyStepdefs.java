@@ -9,7 +9,7 @@ import cucumber.api.java.en.When;
 import java.util.List;
 
 /**
- * Created by Aschalew on 17/05/2017.
+ * Created by Aschalew on 17/05/2017..
  */
 public class MyStepdefs {
 
@@ -17,7 +17,8 @@ public class MyStepdefs {
     private String price;
 
     public MyStepdefs(){
-
+        fruit = System.getProperty("fruitName");
+        price = System.getProperty("price");
     }
 
     @When("^I checkout (\\d+) \"([^\"]*)\"$")
@@ -34,8 +35,7 @@ public class MyStepdefs {
     public void theTotalPriceShouldBeC(int arg0) throws Throwable {
         System.out.println("Then");
         System.out.println("Given");
-        fruit = System.getProperty("fruitName");
-        price = System.getProperty("price");
+
         System.out.println("Running thePriceOfFruitsAsFollow ");
         if (fruit.contains("Banana")){
             System.out.println("The fruit is "+ fruit  +" and it costs "+ price +"c" );
